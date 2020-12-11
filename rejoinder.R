@@ -71,7 +71,7 @@ make.cvgroup.balanced = function(data, K) {
   return(cvgroup)
 }
 
-addestimates.gbm <- function(data, formula, K = 2){ # future: use k folds
+addestimates.gbm <- function(data, formula, K = 2){
   cvgroup   = make.cvgroup.balanced(data, K)
   f0 = numeric(nrow(data))
   f1 = numeric(nrow(data))
